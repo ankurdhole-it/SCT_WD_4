@@ -37,13 +37,11 @@ SCT_WD_4/
 
 1. Clone this repository
 
-```bash
 git clone https://github.com/ankurdhole-it/SCT_WD_4.git
-```
 
-2. Open the project folder.
+3. Open the project folder.
 
-3. Run `index.html` in your preferred web browser.
+4. Run `index.html` in your preferred web browser.
 
 ## 🔗 Live Demo
 
