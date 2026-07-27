@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h1>📋 My To-Do App</h1>
+        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+    </header>
+
+    <!-- INPUT SECTION -->
+    <div class="input-box">
+
+        <input type="text" id="taskInput" placeholder="Enter your task">
+
+        <input type="date" id="taskDate">
+
+        <input type="time" id="taskTime">
+
+        <select id="taskPriority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <button id="addTaskBtn">+ Add</button>
+
+    </div>
+
+    <!-- SEARCH + FILTER -->
+    <div class="controls">
+
+        <input type="text" id="searchInput" placeholder="Search tasks...">
+
+        <div class="filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="completed">Completed</button>
+        </div>
+
+    </div>
+
+    <!-- TASK LIST -->
+    <ul id="taskList"></ul>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="stats">
+            <span id="totalTasks">Total: 0</span>
+            <span id="completedTasks">Completed: 0</span>
+            <span id="pendingTasks">Pending: 0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <button id="clearCompleted">Clear Completed</button>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
